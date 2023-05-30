@@ -1,0 +1,627 @@
+<!--
+  Hello!
+  -
+  Simplefolio is a clean and responsive portfolio template for Developers!
+  Created by Jacobo Martinez.
+  -
+  Github Repo: https://github.com/cobiwave/simplefolio/
+  Readme: https://github.com/cobiwave/simplefolio/README.md
+  -
+  For business & inquires, contact me -> jacobojavier98@gmail.com
+-->
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Todo: put here your site title -->
+    <title>Akshay Kapoor | Software Developer</title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+    <meta name="javascript, python, java, SQL, react" content="[akshaykapoor779], [Akshay Kapoor], Software Developer" />
+    <!-- Todo: improve your SEO by adding a small description of you -->
+    <meta name="description" content="[Your name here] | Developer" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+
+    <!-- Todo: remove the below script once you finish your portfolio -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
+  <body>
+    <div id="top"></div>
+
+    <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title load-hidden">     
+          Hi, my name is <span class="color-main">Akshay Kapoor</span>
+          <br />
+          I'm a Software Developer.
+        </h1>
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--resume" href="#about"
+            >Know more</a>
+        </p>
+      </div>
+    </section>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img
+                alt="Profile Image"
+                class="img-fluid rounded shadow-lg"
+                height="auto"
+                width="300px"
+                src="assets/profile.jpg"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <p class="about-wrapper__info-text">
+                I am a full-stack developer with a Master's in Computer Science and 
+                a Bachelor's in Information Technology. I have experience developing microservices, 
+                implementing custom backend APIs, and building web applications using various programming 
+                languages and frameworks. I am also skilled in machine learning, natural language processing, computer vision 
+                and database management. With a strong focus on efficiency and quality, I am dedicated to 
+                creating innovative and effective solutions for complex problems.
+              </p>
+              <p class="about-wrapper__info-text">
+                When I'm not coding, I enjoy hiking, gaming, and cooking.
+              </p>
+              <span class="d-flex mt-3">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  href="https://github.com/akshaykapoor772/Resume/blob/main/Resume.pdf"
+                >
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Disease Identification System Using Image Analysis</h3>
+                <div>
+                  <p class="mb-4">
+                    This project represents a major step towards accurately identifying various anomalies in 
+                    health conditions digitally. It can be readily available for hospitals and its working 
+                    staff to analyze the pathological trends using digital images of patients. One can upload 
+                    the image and our model will capture the RGB pattern from it, based on which relevant outcome 
+                    will be projected.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero cta-btn--watch-video"
+                  onclick="openModal('MNfCNLBy0b4')"
+                >
+                  Watch Demo Video
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" onclick="openModal('MNfCNLBy0b4')" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/disease.jpeg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Rubik's Cube 2X2X2 (Artificial Intelligence)</h3>
+                <div>
+                  <p class="mb-4">
+                    Implemented 2x2x2 Rubik's cube solver using BFS, IDS and A* search. For demonstration, 
+                    I have used BFS  in this video. When running the code, you need to provide the method with 
+                    which you want the solution (BFS, IDS or A*) and the list of initial moves for shuffling. 
+                    The agent then provides with final moves that can be applied after shuffling to get to the 
+                    solution state. 
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero cta-btn--watch-video"
+                  onclick="openModal('ar6LX10lqUo')"
+                >
+                  Watch Demo Video
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" onclick="openModal('ar6LX10lqUo')" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/cube.jpeg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+           <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Othello (Artificial Intelligence)</h3>
+                <div>
+                  <p class="mb-4">
+                    For this project I developed an intelligent agent to play the game of Othello using the Minimax algorithm.  
+                    The agent utilizes the OthelloState class, making use of functions such as gameOver(),
+                    score(), and generateMoves(). The evaluation function for the agent is based on the score 
+                    function. Additionally, I designed the agent constructor to accept a search depth parameter. 
+                    To validate the agent's performance, I tested it against the OthelloRandomPlayer and achieved 
+                    consistent victories. I also implemented a second agent using the Alpha-Beta 
+                    search algorithm, comparing the search times of both agents at different depths.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero cta-btn--watch-video"
+                  onclick="openModal('aTOEGzzbM5E')"
+                >
+                  Watch Demo Video
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" onclick="openModal('aTOEGzzbM5E')" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/othello1.webp"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Sentiment Analysis</h3>
+                <div>
+                  <p class="mb-4">
+                    The Sentiment Analyzer is a Python-based project that utilizes a naive Bayes classifier 
+                    to analyze the sentiment of text data. By training on labeled data, the classifier learns 
+                    word probabilities associated with positive, negative, and neutral sentiments. The project 
+                    offers an improved version of the classifier that includes preprocessing steps for enhanced 
+                    accuracy. Users can input sentences or files to classify sentiment, and the system calculates
+                    probabilities to determine the sentiment expressed. The project provides an evaluation module
+                    to assess classifier performance, making it a valuable tool for sentiment analysis in various 
+                    domains such as social media monitoring, customer feedback analysis, and opinion mining.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://drive.google.com/file/d/16DEZYWVA3UrrjzSU22MIBY_E9PzRlYYn/view?usp=share_link"
+                >
+                  Readme
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://drive.google.com/drive/folders/16Dq1DdpmLN23dwJfhNgdjknB7G7WqB4n?usp=sharing"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://drive.google.com/drive/folders/16Dq1DdpmLN23dwJfhNgdjknB7G7WqB4n?usp=sharing" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/sentiment-analysis.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Seam Carving</h3>
+                <div>
+                  <p class="mb-4">
+                    The Seam Carving project implements a content-aware image resizing algorithm called seam 
+                    carving. It allows for resizing images while preserving important information by selectively 
+                    removing or adding pixels with the least value. The project utilizes Python libraries like
+                    NumPy, SciPy, and Numba for implementation and optimization. It demonstrates features such 
+                    as reducing height/width while maintaining content integrity and increasing image dimensions
+                    by adding pixels. The project aims to improve the algorithm by adding forward energy mapping
+                    and optimizing processing time for large images.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://drive.google.com/drive/folders/1AUks2sz3zQ44m_hj89rJ3YutTBAIzFOk?usp=share_link"
+                >
+                  See Example Outputs
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://drive.google.com/file/d/1uYQw1Kjf4F4dN696vO-r0YQGUklqgskJ/view?usp=share_link"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://drive.google.com/file/d/1uYQw1Kjf4F4dN696vO-r0YQGUklqgskJ/view?usp=share_link" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/seam2.gif"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+           <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Chat Protocol</h3>
+                <div>
+                  <p class="mb-4">
+                    The Chat Protocol project involves designing and implementing a stateful and concurrent 
+                    chat protocol with a user-friendly interface. The protocol ensures the correct state is 
+                    maintained in both the server and client programs, allowing for concurrent handling of 
+                    multiple clients. Communication is facilitated through a hardcoded port number, and the user 
+                    interface is implemented using the Tkinter library. Robustness is demonstrated through error 
+                    handling and credential verification, ensuring secure communication. The project provides a 
+                    reliable and efficient platform for real-time chat conversations, showcasing the successful 
+                    implementation of a chat protocol with state management and concurrent capabilities.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://drive.google.com/file/d/1Nzk7jGtxhsP_dn_o-hK7tcPU7SRo4Dao/view?usp=share_link"
+                >
+                  Watch Sample Run
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://drive.google.com/drive/folders/1ya8pMV3aLBLAbkG3f3w58And4a9xggTF?usp=share_link"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://drive.google.com/drive/folders/1ya8pMV3aLBLAbkG3f3w58And4a9xggTF?usp=share_link" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/chat.webp"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** Publications Section **** -->
+    <section id="projects" style="margin-top: -150px; margin-bottom: -120px;">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text" style="margin-top: 2px; margin-bottom: 80px;">Research & Publications</h2>
+    
+          <!-- Notice: each .row is a publication -->
+          <h3 class="project-wrapper__text-title">Disease Identification System Using Image Analysis</h3>
+          <h3 class="project-wrapper__text-title">(Turkish Journal of Computer and Mathematics Education "SCOPUS Index")</h3>
+              <div class="project-wrapper__image load-hidden" style="margin-bottom: 20px;">
+                <a rel="noreferrer" href="https://turcomat.org/index.php/turkbilmat/article/view/1582" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid center-image"
+                      src="assets/disease.jpeg"
+                      width="800px"
+                    />
+                  </div>
+                </a>
+              </div>
+          <!-- /END publication -->
+
+           <!-- Notice: each .row is a publication -->
+           <h3 class="project-wrapper__text-title">Cyberwarfare</h3>
+           <h3 class="project-wrapper__text-title">(Journal of University of Shanghai for Science and Technology)</h3>
+           <div class="project-wrapper__image load-hidden" style="margin-bottom: 20px;">
+            <a rel="noreferrer" href="https://jusst.org/cyberwarfare/" target="_blank">
+              <div
+                data-tilt
+                data-tilt-max="4"
+                data-tilt-glare="true"
+                data-tilt-max-glare="0.5"
+                class="thumbnail rounded js-tilt"
+              >
+                <img
+                  alt="Project Image"
+                  class="img-fluid center-image"
+                  src="assets/cyberwarfare.png"
+                  width="800px"
+                />
+              </div>
+            </a>
+          </div>
+      <!-- /END publication -->
+
+       <!-- Notice: each .row is a publication -->
+       <h3 class="project-wrapper__text-title">Structure of Financial Systems and their Effects on Economic Development</h3>
+       <h3 class="project-wrapper__text-title">(International Journal of Social Science & Economic Research)</h3>
+       <div class="project-wrapper__image load-hidden" style="margin-bottom: 20px;">
+        <a rel="noreferrer" href="https://ijsser.org/more2020.php?id=233" target="_blank">
+          <div
+            data-tilt
+            data-tilt-max="4"
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.5"
+            class="thumbnail rounded js-tilt"
+          >
+            <img
+              alt="Project Image"
+              class="img-fluid center-image"
+              src="assets/economic.jpeg"
+              width="800px"
+            />
+          </div>
+        </a>
+        </div>
+        <!-- /END publication -->
+
+        <!-- Notice: each .row is a publication -->
+        <h3 class="project-wrapper__text-title">Web application: Vulnerability Assessment and Penetration Testing</h3>
+        <h3 class="project-wrapper__text-title">(GIS Science Journal)</h3>
+         <div class="project-wrapper__image load-hidden" style="margin-bottom: 20px;">
+          <a rel="noreferrer" href="https://gisscience.net/VOLUME-7-ISSUE-11-2020/" target="_blank">
+            <div
+              data-tilt
+              data-tilt-max="4"
+              data-tilt-glare="true"
+              data-tilt-max-glare="0.5"
+              class="thumbnail rounded js-tilt"
+            >
+              <img
+                alt="Project Image"
+                class="img-fluid center-image"
+                src="assets/testing2.jpeg"
+                width="800px"
+              />
+            </div>
+          </a>
+        </div>
+        <!-- /END publication -->
+        </div>
+      </div>
+    </section>
+    <!-- /END Publication Section -->
+
+
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper load-hidden">
+          <p class="contact-wrapper__text"></p>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:akshaykapoor779@gmail.com"
+            >Send an Email</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a rel="noreferrer" href="https://twitter.com/akshaykapoor771" target="_blank">
+            <i class="fa fa-twitter fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="https://www.linkedin.com/in/kapoor-akshay772/" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="https://github.com/akshaykapoor772" target="_blank">
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+        </div>
+
+        <hr />
+
+        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
+        <p class="footer__text">
+          © 2023 - Developed by
+          <a rel="noreferrer" href="https://github.com/akshaykapoor772" target="_blank"
+            >Akshay Kapoor</a
+          >
+        </p>
+
+      
+
+    <script defer type="module" src="index.js"></script>
+
+    <script>
+      function openModal(videoId) {
+        var modal = document.getElementById('videoModal');
+        var videoFrame = document.getElementById('videoFrame');
+    
+        // Set the video source with the specified video ID
+        videoFrame.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+    
+        // Show the modal
+        modal.style.display = 'block';
+
+        modal.addEventListener('click', closeModal);
+      }
+    
+      function closeModal() {
+        var modal = document.getElementById('videoModal');
+        var videoFrame = document.getElementById('videoFrame');
+    
+        // Clear the video source
+        videoFrame.src = '';
+    
+        // Hide the modal
+        modal.style.display = 'none';
+
+        modal.removeEventListener('click', closeModal);
+      }
+    </script>
+
+
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-video">
+          <span class="close-modal" onclick="closeModal()">&times;</span>
+          <iframe
+            id="videoFrame"
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID?autoplay=1"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
