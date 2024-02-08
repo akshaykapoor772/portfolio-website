@@ -17,3 +17,18 @@
 @import "./sass/sections/hero";
 @import "./sass/sections/projects";
 
+.top-social-links {
+    text-align: right;
+    padding: 10px 0;
+    background-color: rgb(34, 34, 34);
+    a {
+      margin: 0 10px;
+      color: #fffdfd; // Change this as per your site's color scheme
+      font-size: 24px; // Adjust the size as needed
+  
+      &:hover {
+        color: #666; // Change this to your preference for hover effect
+      }
+    }
+  }
+  
